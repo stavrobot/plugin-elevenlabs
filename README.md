@@ -6,7 +6,7 @@ A Stavrobot plugin that converts text to speech using [ElevenLabs](https://eleve
 
 Tell Stavrobot:
 
-> Install the plugin at `https://github.com/stavros/plugin-elevenlabs`
+> Install the plugin at `https://github.com/stavrobot/plugin-elevenlabs`
 
 After installation, configure your ElevenLabs API key:
 
