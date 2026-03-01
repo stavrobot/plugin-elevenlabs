@@ -16,7 +16,7 @@ After installation, configure your ElevenLabs API key:
 
 | Key | Required | Default | Description |
 |-----|----------|---------|-------------|
-| `api_key` | Yes | — | Your ElevenLabs API key. Obtain one at [elevenlabs.io](https://elevenlabs.io/). |
+| `api_key` | Yes | — | Your ElevenLabs API key. Obtain one at [elevenlabs.io](https://elevenlabs.io/). Free keys can only use the default voices; a paid plan is required to use library voices via the API. |
 | `default_voice_id` | No | `JBFqnCBsd6RMkjVDRZzb` | ElevenLabs voice ID to use when none is specified in the request. |
 | `model_id` | No | `eleven_v3` | ElevenLabs model ID. |
 | `stability` | No | `0.9` | Voice stability from 0.0 to 1.0. Higher values produce more consistent speech. |
