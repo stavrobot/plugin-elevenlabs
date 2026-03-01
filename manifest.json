@@ -9,7 +9,7 @@
     "default_voice_id": {
       "description": "Default ElevenLabs voice ID.",
       "required": false,
-      "default": "JBFqnCBsd6RMkjVDRZzb"
+      "default": "bIHbv24MWmeRgasZH58o"
     },
     "model_id": {
       "description": "ElevenLabs model ID.",
