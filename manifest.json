@@ -1,0 +1,25 @@
+{
+  "name": "elevenlabs",
+  "description": "Text-to-speech using ElevenLabs voices.",
+  "config": {
+    "api_key": {
+      "description": "ElevenLabs API key.",
+      "required": true
+    },
+    "default_voice_id": {
+      "description": "Default ElevenLabs voice ID.",
+      "required": false,
+      "default": "JBFqnCBsd6RMkjVDRZzb"
+    },
+    "model_id": {
+      "description": "ElevenLabs model ID.",
+      "required": false,
+      "default": "eleven_v3"
+    },
+    "stability": {
+      "description": "Voice stability (0.0 to 1.0). Higher values produce more consistent speech.",
+      "required": false,
+      "default": 0.9
+    }
+  }
+}
