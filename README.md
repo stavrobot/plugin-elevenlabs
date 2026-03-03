@@ -1,6 +1,6 @@
 # plugin-elevenlabs
 
-A Stavrobot plugin that converts text to speech using [ElevenLabs](https://elevenlabs.io/) voices. It produces an MP3 audio file that Stavrobot delivers back to you.
+A Stavrobot plugin that converts text to speech and transcribes speech to text using [ElevenLabs](https://elevenlabs.io/). TTS produces an MP3 audio file that Stavrobot delivers back to you; STT transcribes an audio file you provide.
 
 ## Installation
 
@@ -20,6 +20,7 @@ After installation, configure your ElevenLabs API key:
 | `default_voice_id` | No | `JBFqnCBsd6RMkjVDRZzb` | ElevenLabs voice ID to use when none is specified in the request. |
 | `model_id` | No | `eleven_v3` | ElevenLabs model ID. |
 | `stability` | No | `0.9` | Voice stability from 0.0 to 1.0. Higher values produce more consistent speech. |
+| `stt_model_id` | No | `scribe_v2` | ElevenLabs speech-to-text model ID. |
 
 ## Usage
 
@@ -30,3 +31,7 @@ Ask Stavrobot to convert text to speech:
 You can also specify a voice:
 
 > Read this in voice `21m00Tcm4TlvDq8ikWAM`: "Hello, world!"
+
+Ask Stavrobot to transcribe audio:
+
+> Transcribe this audio file: `<path-or-url-to-audio>`

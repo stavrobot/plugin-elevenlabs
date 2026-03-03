@@ -1,6 +1,6 @@
 {
   "name": "elevenlabs",
-  "description": "Text-to-speech using ElevenLabs voices.",
+  "description": "Text-to-speech and speech-to-text using ElevenLabs.",
   "config": {
     "api_key": {
       "description": "ElevenLabs API key.",
@@ -20,6 +20,11 @@
       "description": "Voice stability (0.0 to 1.0). Higher values produce more consistent speech.",
       "required": false,
       "default": 0.9
+    },
+    "stt_model_id": {
+      "description": "ElevenLabs speech-to-text model ID.",
+      "required": false,
+      "default": "scribe_v2"
     }
   }
 }
