@@ -1,6 +1,7 @@
 {
   "name": "elevenlabs",
   "description": "Text-to-speech and speech-to-text using ElevenLabs.",
+  "summary": "Text-to-speech and speech-to-text using ElevenLabs",
   "config": {
     "api_key": {
       "description": "ElevenLabs API key.",
