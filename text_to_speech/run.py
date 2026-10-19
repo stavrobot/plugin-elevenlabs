@@ -5,6 +5,7 @@
 # ///
 
 import json
+import os
 import pathlib
 import sys
 from typing import TypedDict
@@ -13,7 +14,9 @@ import requests
 
 
 KNOWN_PARAMETERS: set[str] = {"text", "voice_id"}
-OUTPUT_DIR = pathlib.Path("/tmp/elevenlabs")
+# The plugin-runner passes a per-run directory in STAVROBOT_TEMP_DIR. The fallback
+# keeps the plugin working on plugin-runners that predate it.
+OUTPUT_DIR = pathlib.Path(os.environ.get("STAVROBOT_TEMP_DIR", "/tmp/elevenlabs"))
 OUTPUT_FILE = OUTPUT_DIR / "output.mp3"
 # The tool runs inside a Docker container where the working directory is text_to_speech/,
 # so the plugin config lives one level up.
