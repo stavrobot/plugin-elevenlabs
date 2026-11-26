@@ -10,22 +10,26 @@
     "default_voice_id": {
       "description": "Default ElevenLabs voice ID.",
       "required": false,
-      "default": "bIHbv24MWmeRgasZH58o"
+      "default": "bIHbv24MWmeRgasZH58o",
+      "secret": false
     },
     "model_id": {
       "description": "ElevenLabs model ID.",
       "required": false,
-      "default": "eleven_v3"
+      "default": "eleven_v3",
+      "secret": false
     },
     "stability": {
       "description": "Voice stability (0.0 to 1.0). Higher values produce more consistent speech.",
       "required": false,
-      "default": 0.9
+      "default": 0.9,
+      "secret": false
     },
     "stt_model_id": {
       "description": "ElevenLabs speech-to-text model ID.",
       "required": false,
-      "default": "scribe_v2"
+      "default": "scribe_v2",
+      "secret": false
     }
   }
 }

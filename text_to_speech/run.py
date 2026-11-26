@@ -93,7 +93,7 @@ def main() -> None:
         voice_id=voice_id,
         api_key=config["api_key"],
         model_id=config["model_id"],
-        stability=config["stability"],
+        stability=float(config["stability"]),
     )
     write_output(audio_bytes)
     print(json.dumps({"file": "output.mp3"}))
